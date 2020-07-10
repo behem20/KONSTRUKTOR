@@ -10,6 +10,7 @@
 #include <ExtCtrls.hpp>
 #include <ImgList.hpp>
 #include <Graphics.hpp>
+#include <Menus.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -18,7 +19,6 @@ __published:	// IDE-managed Components
         TImage *Image2;
         TImage *Image3;
         TImage *Image4;
-        TImageList *ImageList1;
         TImage *Image5;
         TImage *Image6;
         TImage *Image7;
@@ -31,6 +31,17 @@ __published:	// IDE-managed Components
         TImage *Image14;
         TImage *Image15;
         TImage *Image16;
+
+        TImageList *picts;
+        TMainMenu *MainMenu1;
+        TMenuItem *Game1;
+        TMenuItem *Newgame1;
+        TMenuItem *N1;
+        TMenuItem *Save1;
+        TMenuItem *N2;
+        TMenuItem *Changelevel1;
+        TMenuItem *Create1;
+        TMenuItem *new1;
         void __fastcall Image1Click(TObject *Sender);
         void __fastcall Image2Click(TObject *Sender);
         void __fastcall Image3Click(TObject *Sender);
@@ -47,6 +58,7 @@ __published:	// IDE-managed Components
         void __fastcall Image14Click(TObject *Sender);
         void __fastcall Image15Click(TObject *Sender);
         void __fastcall Image16Click(TObject *Sender);
+        void __fastcall Newgame1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
