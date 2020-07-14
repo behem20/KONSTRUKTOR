@@ -17,44 +17,91 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 //---------------------------------------------------------------------------
 void __fastcall TForm1::newgame1Click(TObject *Sender)
 {
-albom[0][0]=0;
-albom[0][1]=0;
-albom[0][2]=1;
-albom[0][3]=1;
-albom[1][0]=2;
-albom[1][1]=2;
-albom[1][2]=3;
-albom[1][3]=3;
-albom[2][0]=4;
-albom[2][1]=4;
-albom[2][2]=5;
-albom[2][3]=5;
-albom[3][0]=6;
-albom[3][1]=6;
-albom[3][2]=7;
-albom[3][3]=7;
-  picts->GetBitmap(albom[0][0],Image1->Picture->Bitmap);
-  picts->GetBitmap(albom[0][1],Image2->Picture->Bitmap);
-  picts->GetBitmap(albom[0][2],Image3->Picture->Bitmap);
-  picts->GetBitmap(albom[0][3],Image4->Picture->Bitmap);
-  picts->GetBitmap(albom[1][0],Image5->Picture->Bitmap);
-  picts->GetBitmap(albom[1][1],Image6->Picture->Bitmap);
-  picts->GetBitmap(albom[1][2],Image7->Picture->Bitmap);
-  picts->GetBitmap(albom[1][3],Image8->Picture->Bitmap);
-  picts->GetBitmap(albom[2][0],Image9->Picture->Bitmap);
-  picts->GetBitmap(albom[2][1],Image10->Picture->Bitmap);
-  picts->GetBitmap(albom[2][2],Image11->Picture->Bitmap);
-  picts->GetBitmap(albom[2][3],Image12->Picture->Bitmap);
-  picts->GetBitmap(albom[3][0],Image13->Picture->Bitmap);
-  picts->GetBitmap(albom[3][1],Image14->Picture->Bitmap);
-  picts->GetBitmap(albom[3][2],Image15->Picture->Bitmap);
-  picts->GetBitmap(albom[3][3],Image16->Picture->Bitmap);
 
+
+ int pairs[16] = {0,0,1,1,2,2,3,3,4,4,5,5,6,6,7,7};
+
+for(int i = 0; i < 15; i++) {
+   int j = (rand() % 15) + 1;
+
+   int temp = pairs[i];
+   pairs[i] = pairs[j];
+   pairs[j] = temp;
+  }
+
+  picts->GetBitmap(pairs[0],Image1->Picture->Bitmap);
+  picts->GetBitmap(pairs[1],Image2->Picture->Bitmap);
+  picts->GetBitmap(pairs[2],Image3->Picture->Bitmap);
+  picts->GetBitmap(pairs[3],Image4->Picture->Bitmap);
+  picts->GetBitmap(pairs[4],Image5->Picture->Bitmap);
+  picts->GetBitmap(pairs[5],Image6->Picture->Bitmap);
+  picts->GetBitmap(pairs[6],Image7->Picture->Bitmap);
+  picts->GetBitmap(pairs[7],Image8->Picture->Bitmap);
+  picts->GetBitmap(pairs[8],Image9->Picture->Bitmap);
+  picts->GetBitmap(pairs[9],Image10->Picture->Bitmap);
+  picts->GetBitmap(pairs[10],Image11->Picture->Bitmap);
+  picts->GetBitmap(pairs[11],Image12->Picture->Bitmap);
+  picts->GetBitmap(pairs[12],Image13->Picture->Bitmap);
+  picts->GetBitmap(pairs[13],Image14->Picture->Bitmap);
+  picts->GetBitmap(pairs[14],Image15->Picture->Bitmap);
+  picts->GetBitmap(pairs[15],Image16->Picture->Bitmap);
 
 }
 //---------------------------------------------------------------------------
-void __fastcall TForm1::Image1Click(TObject *Sender)
+
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Button1Click(TObject *Sender)
 {
-  picts->GetBitmap(albom[0][0],Image1->Picture->Bitmap);
-}
+  Image1->Picture->Bitmap->FreeImage();
+  Image1->Picture->Bitmap = NULL;
+
+  Image2->Picture->Bitmap->FreeImage();
+  Image2->Picture->Bitmap = NULL;
+
+  Image3->Picture->Bitmap->FreeImage();
+  Image3->Picture->Bitmap = NULL;
+
+  Image4->Picture->Bitmap->FreeImage();
+  Image4->Picture->Bitmap = NULL;
+
+  Image5->Picture->Bitmap->FreeImage();
+  Image5->Picture->Bitmap = NULL;
+
+  Image6->Picture->Bitmap->FreeImage();
+  Image6->Picture->Bitmap = NULL;
+
+  Image7->Picture->Bitmap->FreeImage();
+  Image7->Picture->Bitmap = NULL;
+
+  Image8->Picture->Bitmap->FreeImage();
+  Image8->Picture->Bitmap = NULL;
+
+  Image9->Picture->Bitmap->FreeImage();
+  Image9->Picture->Bitmap = NULL;
+
+  Image10->Picture->Bitmap->FreeImage();
+  Image10->Picture->Bitmap = NULL;
+
+  Image11->Picture->Bitmap->FreeImage();
+  Image11->Picture->Bitmap = NULL;
+
+  Image12->Picture->Bitmap->FreeImage();
+  Image12->Picture->Bitmap = NULL;
+
+  Image13->Picture->Bitmap->FreeImage();
+  Image13->Picture->Bitmap = NULL;
+
+  Image14->Picture->Bitmap->FreeImage();
+  Image14->Picture->Bitmap = NULL;
+
+  Image15->Picture->Bitmap->FreeImage();
+  Image15->Picture->Bitmap = NULL;
+
+  Image16->Picture->Bitmap->FreeImage();
+  Image16->Picture->Bitmap = NULL;
+
+  }
 //---------------------------------------------------------------------------
+
