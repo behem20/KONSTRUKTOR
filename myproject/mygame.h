@@ -13,6 +13,8 @@
 #include <Graphics.hpp>
 #include <Dialogs.hpp>
 #include <ExtDlgs.hpp>
+#include <ActnList.hpp>
+#include <ActnMan.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -38,9 +40,29 @@ __published:	// IDE-managed Components
         TImage *Image14;
         TImage *Image15;
         TImage *Image16;
+        TTimer *Timer1;
+        TActionManager *ActionManager1;
         TButton *Button1;
+        TButton *Button2;
+        TButton *Button3;
         void __fastcall newgame1Click(TObject *Sender);
-        void __fastcall Button1Click(TObject *Sender);
+        void __fastcall Image1Click(TObject *Sender);
+        void __fastcall Image2Click(TObject *Sender);
+        void __fastcall Image3Click(TObject *Sender);
+        void __fastcall Image4Click(TObject *Sender);
+        void __fastcall Image5Click(TObject *Sender);
+        void __fastcall Image6Click(TObject *Sender);
+        void __fastcall Image7Click(TObject *Sender);
+        void __fastcall Image8Click(TObject *Sender);
+        void __fastcall Image9Click(TObject *Sender);
+        void __fastcall Image10Click(TObject *Sender);
+        void __fastcall Image11Click(TObject *Sender);
+        void __fastcall Image12Click(TObject *Sender);
+        void __fastcall Image13Click(TObject *Sender);
+        void __fastcall Image14Click(TObject *Sender);
+        void __fastcall Image15Click(TObject *Sender);
+        void __fastcall Image16Click(TObject *Sender);
+        void __fastcall Timer1Timer(TObject *Sender);
         
 private:	// User declarations
 public:		// User declarations
