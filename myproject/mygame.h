@@ -23,7 +23,6 @@ __published:	// IDE-managed Components
         TImageList *picts;
         TMenuItem *game1;
         TMenuItem *newgame1;
-        TOpenPictureDialog *OpenPictureDialog1;
         TImage *Image1;
         TImage *Image2;
         TImage *Image3;
@@ -40,11 +39,13 @@ __published:	// IDE-managed Components
         TImage *Image14;
         TImage *Image15;
         TImage *Image16;
-        TTimer *Timer1;
-        TActionManager *ActionManager1;
         TButton *Button1;
         TButton *Button2;
         TButton *Button3;
+        TMenuItem *Level1;
+        TMenuItem *Easy1;
+        TMenuItem *Medium1;
+        TMenuItem *Hard1;
         void __fastcall newgame1Click(TObject *Sender);
         void __fastcall Image1Click(TObject *Sender);
         void __fastcall Image2Click(TObject *Sender);
@@ -62,8 +63,10 @@ __published:	// IDE-managed Components
         void __fastcall Image14Click(TObject *Sender);
         void __fastcall Image15Click(TObject *Sender);
         void __fastcall Image16Click(TObject *Sender);
-        void __fastcall Timer1Timer(TObject *Sender);
+        void __fastcall Button1Click(TObject *Sender);
+        void __fastcall Button3Click(TObject *Sender);
         
+
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
